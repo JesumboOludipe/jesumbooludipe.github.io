@@ -2990,7 +2990,7 @@ ul.posts article header > :last-child {
     -ms-flex: 0 1 auto;
     margin: 0 0 2em 0;
     padding: 0;
-    text-align: center;
+    text-align: left;
   }
 
   .post > header .meta {

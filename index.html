@@ -1,1192 +1,863 @@
-<!DOCTYPE html>
-<!--
-	Future Imperfect by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <title>Jesumbo Joseph Oludipe | Portfolio</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jesumbo Joseph Oludipe — Data Analyst</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="is-preload">
-    <!-- Wrapper -->
-    <div id="wrapper">
-      <!-- Header -->
-      <header id="header">
-        <h1><a href="index.html">Jesumbo Joseph Oludipe</a></h1>
-        <nav class="links">
-          <ul>
-            <li>
-              <a href="https://www.linkedin.com/in/jesumbooludipe/">LinkedIn</a>
-            </li>
-            <li>
-              <a
-                href="https://drive.google.com/file/d/1SKc5Ug2jjlOU-byNBj5oX75r_f5Buh6m/view?usp=drivesdk"
-                >Resume</a
+  <body>
+    <!-- NAV -->
+    <nav id="navbar">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo">JO</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#blog">Writing</a></li>
+          <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#blog">Writing</a>
+        <a href="#contact">Get in Touch</a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="hero-eyebrow">Data &amp; Insights Analyst</p>
+          <h1 class="hero-name">Jesumbo<br /><em>Joseph Oludipe</em></h1>
+          <p class="hero-desc">
+            Seven years turning complex data into clarity across utilities,
+            finance, and digital marketing sectors. Specialising in Power BI,
+            SQL, Python, Excel, Azure &amp; Databricks.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary">View My Work</a>
+            <a
+              href="https://drive.google.com/file/d/1SKc5Ug2jjlOU-byNBj5oX75r_f5Buh6m/view?usp=drivesdk"
+              target="_blank"
+              class="btn-secondary"
+              >Download CV</a
+            >
+          </div>
+          <div class="hero-socials">
+            <a
+              href="https://www.linkedin.com/in/jesumbooludipe/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
               >
-            </li>
-            <li><a href="https://github.com/JesumboOludipe">GitHub</a></li>
-            <li><a href="https://public.tableau.com/app/profile/jesumbo.oludipe/vizzes">Tableau</a></li>
-          </ul>
-        </nav>
-        <nav class="main">
-          <ul>
-            <!-- <li class="search">
-              <a class="fa-search" href="#search">Search</a>
-              <form id="search" method="get" action="#">
-                <input type="text" name="query" placeholder="Search" />
-              </form> 
-            </li> -->
-            <li class="menu">
-              <a class="fa-bars" href="#menu">Menu</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-      <!-- Menu -->
-      <section id="menu">
-        <!-- Search -->
-        <section>
-          <form class="search" method="get" action="#">
-            <input type="text" name="query" placeholder="Search" />
-          </form>
-        </section>
-
-        <!-- Links -->
-        <section>
-          <ul class="links">
-            <li>
-              <a href="https://www.linkedin.com/in/jesumbooludipe/">
-                <h3>LinkedIn</h3>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://drive.google.com/file/d/1SKc5Ug2jjlOU-byNBj5oX75r_f5Buh6m/view?usp=drivesdk"
+                <path
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+            <a
+              href="https://github.com/JesumboOludipe"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
               >
-                <h3>Resume</h3>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/JesumboOludipe">
-                <h3>Github</h3>
-              </a>
-            </li>
-            <li>
-              <a href="https://public.tableau.com/app/profile/jesumbo.oludipe/vizzes">
-                <h3>Tableau</h3>
-              </a>
-            </li>
-          </ul>
-        </section>
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://public.tableau.com/app/profile/jesumbo.oludipe/vizzes"
+              target="_blank"
+              aria-label="Tableau"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <rect x="3" y="3" width="7" height="7" />
+                <rect x="14" y="3" width="7" height="7" />
+                <rect x="3" y="14" width="7" height="7" />
+                <rect x="14" y="14" width="7" height="7" />
+              </svg>
+            </a>
+            <a href="mailto:oludipejesumboj&#64;gmail.com" aria-label="Email">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image-wrap">
+          <div class="hero-image-frame">
+            <img
+              src="images/profile4.jpg"
+              alt="Jesumbo Joseph Oludipe"
+              class="hero-photo"
+              onerror="
+                this.style.display = 'none';
+                this.nextElementSibling.style.display = 'flex';
+              "
+            />
+            <div class="hero-photo-placeholder">JJO</div>
+          </div>
+          <div class="hero-badge">
+            <span class="badge-number">7+</span>
+            <span class="badge-label">Years of<br />Experience</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
 
-        <!-- Actions -->
-        <section>
-          <ul class="actions stacked">
-            <!-- <li><a href="#" class="button large fit">Log In</a></li> -->
-          </ul>
-        </section>
-      </section>
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="section-label">01 — About</div>
+        <div class="about-grid">
+          <div class="about-left">
+            <h2 class="section-heading">
+              Turning data into<br /><em>decisions that matter</em>
+            </h2>
+          </div>
+          <div class="about-right">
+            <p>
+              I'm a data analyst with over seven years of experience driving
+              strategic insights and operational efficiency across water
+              utilities, financial services, and digital marketing sectors.
+            </p>
+            <p>
+              Proficient in
+              <strong>Excel, Python, SQL, Power BI, Databricks,</strong> and
+              <strong>Azure Data Factory</strong>, I specialise in transforming
+              complex business requirements into effective technical solutions,
+              from optimising ETL pipelines to building executive dashboards
+              that inform real decisions.
+            </p>
+            <p>
+              Currently working as a Data Analyst at Thames Water, delivering
+              data-driven insights that support operations teams across the
+              network..
+            </p>
+            <div class="about-skills">
+              <div class="skill-tag">SQL</div>
+              <div class="skill-tag">Power BI</div>
+              <div class="skill-tag">Python</div>
+              <div class="skill-tag">Azure Data Factory</div>
+              <div class="skill-tag">Databricks</div>
+              <div class="skill-tag">Excel</div>
+              <div class="skill-tag">Salesforce</div>
+              <div class="skill-tag">Tableau</div>
+              <div class="skill-tag">Fabric</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!-- Main -->
-      <div id="main">
-        
-        <h1>Projects</h1>
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-label">02 — Experience</div>
+        <h2 class="section-heading">Where I've <em>worked</em></h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-period">Sep 2024 — Present</span>
+              <span class="timeline-tag">Current</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Data Analyst</h3>
+                <span class="timeline-company">Thames Water, UK</span>
+              </div>
+              <p>
+                Leveraged SQL, Power BI, Python, and Azure to deliver insights
+                and ensure top-tier water supply and waste management services.
+                Developed dashboards monitoring case resolution and engineering
+                processes across the water supply network, driving efficiency
+                and operational excellence.
+              </p>
+              <div class="timeline-skills">
+                <span>SQL</span><span>Python</span><span>Power BI</span
+                ><span>Salesforce</span>
+              </div>
+            </div>
+          </div>
 
-        <!-- Post -->
-        <article class="post">
-          <header>
-            <div class="title">
-              <h2>
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-period">Sep 2025 — Jan 2026</span>
+              <span class="timeline-tag">Secondment</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Business Insights Manager</h3>
+                <span class="timeline-company">Thames Water, UK</span>
+              </div>
+              <p>
+                Led a team of five analysts overseeing delivery of 25+ Power BI
+                dashboards, SQL reports, and Databricks models. Drove root cause
+                analysis on operational issues, reducing customer complaints
+                through early warnings. Collaborated with senior stakeholders to
+                align analytics strategy with business goals and scaled
+                organisational use of Power BI and Databricks.
+              </p>
+              <div class="timeline-skills">
+                <span>Power BI</span><span>Databricks</span><span>SQL</span
+                ><span>Azure</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-period">Sep 2023 — Aug 2024</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Strategy &amp; Inventory Analyst</h3>
+                <span class="timeline-company">Cabot Financial, UK</span>
+              </div>
+              <p>
+                Built optimised ETL pipelines using SQL Server, Azure
+                Databricks, and Power BI. Identified dormant accounts generating
+                £100k+ in additional revenue and implemented strategies to
+                prevent account losses while reducing operational costs.
+              </p>
+              <div class="timeline-skills">
+                <span>SQL Server</span><span>Databricks</span
+                ><span>Power BI</span><span>Excel</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-period">Sep 2022 — Aug 2023</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Data Analyst</h3>
+                <span class="timeline-company">Digital Echoes, UK</span>
+              </div>
+              <p>
+                Led a team of analysts to optimise marketing campaigns,
+                significantly improving ROI. Used SQL to analyse sales data and
+                developed Python algorithms to analyse customer behaviour
+                patterns, driving increased acquisition. Improved website
+                performance via Power BI and Google Analytics.
+              </p>
+              <div class="timeline-skills">
+                <span>Python</span><span>SQL</span><span>Power BI</span
+                ><span>Google Analytics</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-period">Apr 2020 — Aug 2022</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Data Analyst</h3>
+                <span class="timeline-company"
+                  >Onyema Osueke Finance &amp; Consulting, Nigeria</span
+                >
+              </div>
+              <p>
+                Led strategic planning and financial analysis to drive revenue
+                growth. Developed automated Excel templates for streamlined
+                payroll management and designed user-friendly Power BI
+                dashboards to enhance data accessibility for non-technical
+                stakeholders.
+              </p>
+              <div class="timeline-skills">
+                <span>Excel</span><span>SQL</span><span>Power BI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-label">03 — Projects</div>
+        <h2 class="section-heading">Selected <em>work</em></h2>
+        <div class="projects-grid">
+          <div class="project-card project-card--featured">
+            <a
+              href="https://novyproo-my.sharepoint.com/:x:/g/personal/oludipejesumboj_novypro_com/EfKZZ4_cMAJMmwDXM7zCF7MBSJGN54Z0i0XFkMqoIoN0hg?e=dirXC4"
+              target="_blank"
+              class="project-image-wrap"
+            >
+              <img src="images/budget2.png" alt="Personal Budget Planner" />
+              <div class="project-overlay"><span>View Project</span></div>
+            </a>
+            <div class="project-card-inner">
+              <div class="project-meta">
+                <span class="project-tech">Excel</span>
+              </div>
+              <h3>
                 <a
                   href="https://novyproo-my.sharepoint.com/:x:/g/personal/oludipejesumboj_novypro_com/EfKZZ4_cMAJMmwDXM7zCF7MBSJGN54Z0i0XFkMqoIoN0hg?e=dirXC4"
+                  target="_blank"
                   >Personal Budget Planner</a
                 >
-              </h2>
-              <p>Excel</p>
-            </div>
-          </header>
-          <a
-            href="https://novyproo-my.sharepoint.com/:x:/g/personal/oludipejesumboj_novypro_com/EfKZZ4_cMAJMmwDXM7zCF7MBSJGN54Z0i0XFkMqoIoN0hg?e=dirXC4"
-            class="image featured"
-            ><img src="images/budget2.png" alt=""
-          /></a>
-          <p>
-            Developed an interactive Personal Budget Planner in Excel to track income, expenses, and savings performance. The solution features dynamic formulas, automated KPIs such as savings rate, and visually appealing dashboards for real-time financial monitoring.
-            I implemented advanced logic to handle late-month income or expenses, allowing users to automatically treat income or expenses received after a specified day as part of the following month's budget, ideal for those with irregular pay schedules.
-            The tool captures both planned and actual budget data, providing insights into spending habits and enabling users to manage inconsistent income and expenses effectively. This project demonstrates my expertise in advanced Excel functions, dynamic reporting, and practical financial planning solutions.
-          </p>
-          <footer>
-            <ul class="actions">
-              <li>
-                <a
-                  href="https://novyproo-my.sharepoint.com/:x:/g/personal/oludipejesumboj_novypro_com/EfKZZ4_cMAJMmwDXM7zCF7MBSJGN54Z0i0XFkMqoIoN0hg?e=dirXC4"
-                  class="button large"
-                  >View Project</a
-                >
-              </li>
-            </ul>
-          </footer>
-        </article>
-
-        <!-- Post -->
-        <article class="post">
-          <header>
-            <div class="title">
-              <h2>
-                <a href="cross.html"
-                  >Unveiling Cross-Selling Opportunities in Banking Products
-                  through Data-Driven Analysis</a
-                >
-              </h2>
-              <p>Power BI, Python</p>
-            </div>
-          </header>
-          <a href="cross.html" class="image featured"
-            ><img src="images/cross.png" alt=""
-          /></a>
-          <a
-            href="https://github.com/JesumboOludipe/PortfolioProjects/blob/main/Cross%20Selling%20Recommendations%20for%20Banking%20Products/Cross%20Selling%20Project%20-%20Python%20Script.pdf"
-            class="image featured"
-            ><img src="images/crosspy.png" alt=""
-          /></a>
-          <p>
-            As a Data Analyst consulting for a banking institution, I conducted
-            an in-depth analysis of a dataset containing 13.6 million customer
-            records to uncover insights into customer behavior and identify
-            cross-selling opportunities for the bank's products. Leveraging
-            Python and its extensive libraries, I performed data cleaning and
-            visualization tasks, which included standardizing column names,
-            addressing missing values, and creating a refined dataset of 949,609
-            unique customers. For further analysis, I exported the...
-          </p>
-          <footer>
-            <ul class="actions">
-              <li>
-                <a href="cross.html" class="button large">Continue Reading</a>
-              </li>
-            </ul>
-          </footer>
-        </article>
-
-        <!-- Post -->
-        <article class="post">
-          <header>
-            <div class="title">
-              <h2>
-                <a href="sylip.html"
-                  >Driving Retail Success: Unveiling Profitability and
-                  Performance Insights for Sylip Corporation</a
-                >
-              </h2>
-              <p>Excel, SQL, Power BI</p>
-            </div>
-          </header>
-          <a href="sylip.html" class="image featured"
-            ><img src="images/sylip.png" alt=""
-          /></a>
-          <p>
-            Embark on a journey into the world of retail as this project
-            uncovers valuable insights for Sylip Corporation, a versatile retail
-            company offering household items, groceries, clothing, and more.
-            Leveraging sales data...
-          </p>
-          <footer>
-            <ul class="actions">
-              <li>
-                <a href="sylip.html" class="button large">Continue Reading</a>
-              </li>
-            </ul>
-          </footer>
-        </article>
-
-        <!-- Post -->
-        <article class="post">
-          <header>
-            <div class="title">
-              <h2>
-                <a
-                  href="https://github.com/JesumboOludipe/PortfolioProjects/tree/main/Countries'%20Energy%20Production%20and%20CO2%20Emissions"
-                  >Energy Trends and CO2 Emissions Analysis: Exploring Global
-                  Patterns and Environmental Impact</a
-                >
-              </h2>
-              <p>Excel, SQL</p>
-            </div>
-          </header>
-          <a
-            href="https://github.com/JesumboOludipe/PortfolioProjects/tree/main/Countries'%20Energy%20Production%20and%20CO2%20Emissions"
-            class="image featured"
-            ><img src="images/energy.png" alt=""
-          /></a>
-          <p>
-            This project centers on analyzing energy consumption and CO2
-            emissions data to uncover insights into global energy trends and
-            their environmental impact. Using SQL, I conducted a comprehensive
-            analysis, including trend analysis, correlation analysis, as well as
-            regional and country-specific evaluations. Key findings reveal a
-            general increase in both energy consumption and CO2 emissions over
-            time, a strong positive correlation between these two factors, and
-            significant variations in energy intensity and emissions across
-            different regions and countries. The project serves as an
-            exploration and research initiative in the fields of energy and
-            environmental analysis, offering a foundation for predictive
-            modeling and the integration of additional data sources. By
-            harnessing the power of SQL and various data analysis techniques,
-            this project provides valuable insights into the intricate
-            relationships between energy consumption, CO2 emissions, and
-            environmental sustainability.
-          </p>
-          <footer>
-            <ul class="actions">
-              <li>
-                <a
-                  href="https://github.com/JesumboOludipe/PortfolioProjects/tree/main/Countries'%20Energy%20Production%20and%20CO2%20Emissions"
-                  class="button large"
-                  >View Project</a
-                >
-              </li>
-            </ul>
-          </footer>
-        </article>
-
-        <!-- Post -->
-        <article class="post">
-          <header>
-            <div class="title">
-              <h2>
-                <a
-                  href="https://github.com/JesumboOludipe/PortfolioProjects/tree/main/Extracting%20Insights%20from%20Facebook%20and%20Instagram%20Adverts%20-%20SQL"
-                  >Uncovering Actionable Insights to Optimize Social Media
-                  Advertising Campaigns</a
-                >
-              </h2>
-              <p>Excel, SQL, Power BI</p>
-            </div>
-          </header>
-          <a
-            href="https://github.com/JesumboOludipe/PortfolioProjects/tree/main/Extracting%20Insights%20from%20Facebook%20and%20Instagram%20Adverts%20-%20SQL"
-            class="image featured"
-            ><img src="images/facebook.png" alt=""
-          /></a>
-          <p>
-            Leading a talented team of 5 analysts at Digital Echoes, I
-            spearheaded a project focused on analyzing key performance
-            indicators (KPIs) for Facebook and Instagram advertisements and
-            campaigns. The primary objective was to provide actionable
-            recommendations to enhance the effectiveness of these ads. We began
-            by meticulously extracting, cleaning, and validating the data to
-            ensure its integrity. Through comprehensive exploratory data
-            analysis (EDA), we examined critical metrics such as ad spend,
-            reach, engagement, and monthly growth rate, uncovering valuable
-            insights and trends. Leveraging SQL, we extracted meaningful
-            insights that enabled us to pinpoint areas for improvement in the
-            advertisements and highlight components that excelled. We presented
-            our findings via Power BI, offering a clear, data-driven approach
-            designed to transform advertising and business strategies,
-            ultimately maximizing their impact and effectiveness.
-          </p>
-          <footer>
-            <ul class="actions">
-              <li>
-                <a
-                  href="https://github.com/JesumboOludipe/PortfolioProjects/tree/main/Extracting%20Insights%20from%20Facebook%20and%20Instagram%20Adverts%20-%20SQL"
-                  class="button large"
-                  >View Project</a
-                >
-              </li>
-            </ul>
-          </footer>
-        </article>
-        <!-- Post 
-        <article class="post">
-          <header>
-            <div class="title">
-              <h2><a href="single.html">Euismod et accumsan</a></h2>
-              <p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p>
-            </div>
-            <div class="meta">
-              <time class="published" datetime="2015-10-22"
-                >October 22, 2015</time
+              </h3>
+              <p>
+                Interactive Excel tool tracking income, expenses, and savings
+                with dynamic KPIs, automated dashboards, and advanced logic for
+                irregular pay schedules.
+              </p>
+              <a
+                href="https://novyproo-my.sharepoint.com/:x:/g/personal/oludipejesumboj_novypro_com/EfKZZ4_cMAJMmwDXM7zCF7MBSJGN54Z0i0XFkMqoIoN0hg?e=dirXC4"
+                target="_blank"
+                class="project-link"
+                >View Project →</a
               >
-              <a href="#" class="author"
-                ><span class="name">Jane Doe</span
-                ><img src="images/avatar.jpg" alt=""
-              /></a>
             </div>
-          </header>
-          <a href="single.html" class="image featured"
-            ><img src="images/pic03.jpg" alt=""
-          /></a>
-          <p>
-            Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl.
-            Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna
-            enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non
-            congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed
-            vitae justo condimentum, porta lectus vitae, ultricies congue
-            gravida diam non fringilla. Cras vehicula tellus eu ligula viverra,
-            ac fringilla turpis suscipit. Quisque vestibulum rhoncus ligula.
-          </p>
-          <footer>
-            <ul class="actions">
-              <li>
-                <a href="single.html" class="button large">Continue Reading</a>
-              </li>
-            </ul>
-            <ul class="stats">
-              <li><a href="#">General</a></li>
-              <li><a href="#" class="icon solid fa-heart">28</a></li>
-              <li><a href="#" class="icon solid fa-comment">128</a></li>
-            </ul>
-          </footer>
-        </article> 
-			-->
+          </div>
 
-        <!-- Post -->
-        <!--
-							<article class="post">
-								<header>
-									<div class="title">
-										<h2><a href="#">Elements</a></h2>
-										<p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p>
-									</div>
-									<div class="meta">
-										<time class="published" datetime="2015-10-18">October 18, 2015</time>
-										<a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
-									</div>
-								</header>
-
-								<section>
-									<h3>Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
-
-                  while (!deck.isInOrder()) {
-                    print 'Iteration ' + i;
-                    deck.shuffle();
-                    i++;
-                  }
-
-                  print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
-
-								<section>
-									<h3>Lists</h3>
-									<div class="row">
-										<div class="col-6 col-12-medium">
-											<h4>Unordered</h4>
-											<ul>
-												<li>Dolor pulvinar etiam.</li>
-												<li>Sagittis adipiscing.</li>
-												<li>Felis enim feugiat.</li>
-											</ul>
-											<h4>Alternate</h4>
-											<ul class="alt">
-												<li>Dolor pulvinar etiam.</li>
-												<li>Sagittis adipiscing.</li>
-												<li>Felis enim feugiat.</li>
-											</ul>
-										</div>
-										<div class="col-6 col-12-medium">
-											<h4>Ordered</h4>
-											<ol>
-												<li>Dolor pulvinar etiam.</li>
-												<li>Etiam vel felis viverra.</li>
-												<li>Felis enim feugiat.</li>
-												<li>Dolor pulvinar etiam.</li>
-												<li>Etiam vel felis lorem.</li>
-												<li>Felis enim et feugiat.</li>
-											</ol>
-											<h4>Icons</h4>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-											</ul>
-										</div>
-									</div>
-									<h3>Actions</h3>
-									<div class="row">
-										<div class="col-6 col-12-medium">
-											<ul class="actions">
-												<li><a href="#" class="button">Default</a></li>
-												<li><a href="#" class="button">Default</a></li>
-												<li><a href="#" class="button">Default</a></li>
-											</ul>
-											<ul class="actions small">
-												<li><a href="#" class="button small">Small</a></li>
-												<li><a href="#" class="button small">Small</a></li>
-												<li><a href="#" class="button small">Small</a></li>
-											</ul>
-											<ul class="actions stacked">
-												<li><a href="#" class="button">Default</a></li>
-												<li><a href="#" class="button">Default</a></li>
-												<li><a href="#" class="button">Default</a></li>
-											</ul>
-											<ul class="actions stacked">
-												<li><a href="#" class="button small">Small</a></li>
-												<li><a href="#" class="button small">Small</a></li>
-												<li><a href="#" class="button small">Small</a></li>
-											</ul>
-										</div>
-										<div class="col-6 col-12-medium">
-											<ul class="actions stacked">
-												<li><a href="#" class="button fit">Default</a></li>
-												<li><a href="#" class="button fit">Default</a></li>
-											</ul>
-											<ul class="actions stacked">
-												<li><a href="#" class="button small fit">Small</a></li>
-												<li><a href="#" class="button small fit">Small</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-
-								<section>
-									<h3>Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-								<section>
-									<h3>Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button large">Large</a></li>
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions fit">
-										<li><a href="#" class="button fit">Fit</a></li>
-										<li><a href="#" class="button fit">Fit</a></li>
-										<li><a href="#" class="button fit">Fit</a></li>
-									</ul>
-									<ul class="actions fit small">
-										<li><a href="#" class="button fit small">Fit + Small</a></li>
-										<li><a href="#" class="button fit small">Fit + Small</a></li>
-										<li><a href="#" class="button fit small">Fit + Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-upload">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-save">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button disabled">Disabled</span></li>
-										<li><span class="button disabled icon solid fa-download">Disabled</span></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3>Form</h3>
-									<form method="post" action="#">
-										<div class="row gtr-uniform">
-											<div class="col-6 col-12-xsmall">
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-											</div>
-											<div class="col-6 col-12-xsmall">
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-											</div>
-											<div class="col-12">
-												<select name="demo-category" id="demo-category">
-													<option value="">- Category -</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-normal" name="demo-priority">
-												<label for="demo-priority-normal">Normal</label>
-											</div>
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="col-6 col-12-small">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="col-6 col-12-small">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="col-12">
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-											<div class="col-12">
-												<ul class="actions">
-													<li><input type="submit" value="Send Message" /></li>
-													<li><input type="reset" value="Reset" /></li>
-												</ul>
-											</div>
-										</div>
-									</form>
-								</section>
-
-								<section>
-									<h3>Image</h3>
-									<h4>Fit</h4>
-									<div class="box alt">
-										<div class="row gtr-uniform">
-											<div class="col-12"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-										</div>
-									</div>
-									<h4>Left &amp; Right</h4>
-									<p><span class="image left"><img src="images/pic07.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-									<p><span class="image right"><img src="images/pic04.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-								</section>
-
-							</article>
-						-->
-
-        <!-- Pagination 
-        <ul class="actions pagination">
-          <li>
-            <a href="" class="disabled button large previous">Previous Page</a>
-          </li>
-          <li><a href="#" class="button large next">Next Page</a></li>
-        </ul> -->
-
-        
-        <h1>Work Experience</h1>
-        <!--Post -->
-        <article class="post">
-
-          <header>
-            <div class="title">
-              <h2>
-                <a>Thames Water, UK</a>
-              </h2>
-              <p style = "font-size: 1.2em;">Business Insights Manager, September 2025 – Present</p>
+          <div class="project-card">
+            <a
+              href="https://app.powerbi.com/view?r=eyJrIjoiMzA2NDlkOTItZWQyYi00YmQwLWIyZTAtOTZjOTFjY2Y1OTdkIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"
+              target="_blank"
+              class="project-image-wrap"
+            >
+              <img src="images/cross.png" alt="Cross-Selling in Banking" />
+              <div class="project-overlay"><span>View Project</span></div>
+            </a>
+            <div class="project-card-inner">
+              <div class="project-meta">
+                <span class="project-tech">Power BI</span
+                ><span class="project-tech">Python</span>
+              </div>
+              <h3>
+                <a href="cross.html">Cross-Selling Opportunities in Banking</a>
+              </h3>
               <p>
-                As Business Insights Manager at Thames Water, I led a team of five analysts and oversaw the delivery and maintenance of 25+ Power BI dashboards, SQL reports, and Databricks data models that empowered data-driven decisions across various regions. I drove root cause analysis on operational issues, reducing customer complaints through early warnings and strategic recommendations. I collaborated with senior stakeholders to align analytics with business goals, scaled the organization’s use of Power BI and Databricks, and fostered a culture of insight-led decision-making. I also owned and maintained self-service analytics platforms—governing dataset access, training end users, and continuously improving dashboard usability based on feedback and usage patterns.
-              </p>              
-            </div>
-          </header> 
-
-          <header>
-            <div class="title">
-              <h2>
-                <a>Thames Water, UK</a>
-              </h2>
-              <p style = "font-size: 1.2em;">Data Analyst, September 2024 – Present</p>
-              <p>
-                At Thames Water, I leverage SQL, Power BI, Python, and Azure tools to deliver insights, optimize decision-making, and ensure top-tier water supply and waste management services for our customers across the UK. My role involves analyzing data, developing reports, designing data flows, and transforming large datasets from diverse sources. I collaborate with teams and stakeholders to streamline workflows, enhance pipelines, and support critical decisions. Using Power BI and Salesforce, I create dashboards to monitor case resolution and engineering processes across the water supply network, driving efficiency and operational excellence.
-              </p>              
-            </div>
-          </header> 
-
-          <header>
-            <div class="title">
-              <h2>
-                <a>Cabot Financial, UK</a>
-              </h2>
-              <p style = "font-size: 1.2em;">Strategy and Inventory Analyst, September 2023 – August 2024</p>
-              <p>
-                At Cabot Financial, I built optimized ETL pipelines and data flows using SQL Server, Azure Databricks, and Power BI to develop reports and dashboards for account inventory tracking. I conducted analysis with Excel and SQL, identifying dormant accounts that generated £100k+ in revenue and implemented strategies to prevent account losses while reducing costs. By collaborating with stakeholders, I translated business needs into analytical solutions, applied performance-tuning techniques, and enhanced data processing and reporting to drive operational efficiency and revenue growth.
+                In-depth analysis of 13.6 million customer records to uncover
+                cross-selling opportunities across banking products.
               </p>
+              <a
+                href="https://app.powerbi.com/view?r=eyJrIjoiMzA2NDlkOTItZWQyYi00YmQwLWIyZTAtOTZjOTFjY2Y1OTdkIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"
+                target="_blank"
+                class="project-link"
+                >View Project →</a
+              >
             </div>
-          </header>
-          
-          <header>
-            <div class="title">
-              <h2>
-                <a>Digital Echoes, UK</a>
-              </h2>
-              <p style = "font-size: 1.2em;">Data Analyst, September 2022 – August 2023</p>
+          </div>
+
+          <div class="project-card">
+            <a
+              href="https://github.com/JesumboOludipe/PortfolioProjects/tree/main/Sylip%20Corporation%20Sales%20Analysis%20-%20SQL%20and%20Power%20BI"
+              target="_blank"
+              class="project-image-wrap"
+            >
+              <img src="images/sylip.png" alt="Sylip Corporation" />
+              <div class="project-overlay"><span>View Project</span></div>
+            </a>
+            <div class="project-card-inner">
+              <div class="project-meta">
+                <span class="project-tech">Excel</span
+                ><span class="project-tech">SQL</span
+                ><span class="project-tech">Power BI</span>
+              </div>
+              <h3>
+                <a href="sylip.html"
+                  >Retail Profitability for Sylip Corporation</a
+                >
+              </h3>
               <p>
-                At Digital Echoes, I led a team of analysts to optimize marketing campaigns, significantly improving ROI and driving better outcomes. Collaborating with cross-functional teams, I used SQL to analyze sales data, identifying key opportunities and enhancing resource allocation. I leveraged Power BI and Google Analytics to improve website performance and customer engagement, while developing Python algorithms to analyze customer behavior patterns, driving increased acquisition. Additionally, I enhanced data quality and accuracy through meticulous preprocessing and data cleaning.
+                Uncovered profitability and performance insights for a
+                multi-category retail company covering household items,
+                groceries, and clothing.
               </p>
+              <a
+                href="https://github.com/JesumboOludipe/PortfolioProjects/tree/main/Sylip%20Corporation%20Sales%20Analysis%20-%20SQL%20and%20Power%20BI"
+                target="_blank"
+                class="project-link"
+                >View Project →</a
+              >
             </div>
-          </header>
+          </div>
 
-          <header style= "margin-bottom: 0em;">
-            <div class="title">
-              <h2>
-                <a>Onyema Osueke Finance and Consulting Firm, Nigeria</a>
-              </h2>
-              <p style = "font-size: 1.2em;">Data Analyst, April 2020 – August 2022</p>
+          <div class="project-card">
+            <a
+              href="https://github.com/JesumboOludipe/PortfolioProjects/tree/main/Countries'%20Energy%20Production%20and%20CO2%20Emissions"
+              target="_blank"
+              class="project-image-wrap"
+            >
+              <img src="images/energy.png" alt="Energy Trends" />
+              <div class="project-overlay"><span>View Project</span></div>
+            </a>
+            <div class="project-card-inner">
+              <div class="project-meta">
+                <span class="project-tech">Excel</span
+                ><span class="project-tech">SQL</span>
+              </div>
+              <h3>
+                <a
+                  href="https://github.com/JesumboOludipe/PortfolioProjects/tree/main/Countries'%20Energy%20Production%20and%20CO2%20Emissions"
+                  target="_blank"
+                  >Energy Trends &amp; CO2 Emissions Analysis</a
+                >
+              </h3>
               <p>
-                At Onyema Osueke Finance and Consulting Firm, I collaborated with cross-functional teams to align projects with business objectives and conducted data cleaning and transformation using Excel and SQL to ensure data integrity. I presented complex data insights to stakeholders, led strategic planning and financial analysis to drive revenue growth and cost savings, and developed automated Excel templates for streamlined payroll management and remittances. Additionally, I designed user-friendly Power BI dashboards to enhance data accessibility for non-technical stakeholders.  
+                Comprehensive SQL analysis of global energy consumption and CO2
+                emissions revealing strong correlations across regions.
               </p>
+              <a
+                href="https://github.com/JesumboOludipe/PortfolioProjects/tree/main/Countries'%20Energy%20Production%20and%20CO2%20Emissions"
+                target="_blank"
+                class="project-link"
+                >View Project →</a
+              >
             </div>
-          </header>            
-        </article>
-      
-      </div>
+          </div>
 
-      <!-- Sidebar -->
-      <section id="sidebar">
-        <!-- Intro -->
-        <section id="intro">
-          <article class="mini-post">
-            <a class="image"
-              ><img src="images/profile4.jpg" alt=""
-            /></a>
-          </article>
-          <header>
-            <h2>Jesumbo Joseph Oludipe</h2>
-
-            <p style="font-size: 0.9em;">
-              <br>
-              Data analyst with over seven years of experience in driving strategic insights and enhancing operational efficiency. Proficient in Excel, Python, SQL, Power BI, Databricks, and Azure Data Factory, specializing in turning complex business requirements into effective technical solutions.  
-              </br>
-              <br></br>
-              My expertise spans optimizing ETL processes, developing insightful dashboards, and collaborating with cross-functional teams. Through meticulous data analysis and visualization, I have consistently contributed to revenue growth, cost reduction, and improved efficiency.             
-            </br>
-            </p>
-          </header>
-        </section>
-
-        <!-- Mini Posts -->
-        <section>
-          <div class="mini-posts">
-
-            <h2>Certfications</h2>
-
-            <!-- Mini Post -->
-            <article class="mini-post">
-              <header>
-                <h3>
-                  <a
-                    href="https://learn.microsoft.com/api/credentials/share/en-us/JesumboOludipe-9899/EF77A1444DC48BCD?sharingId=C7777CDF805B83EF"
-                    >Microsoft Certified: Microsoft Fabric Data Engineer (DP-700) </a
-                  >
-                </h3>
-                <time class="published" datetime="2015-10-20"></time>
-              </header>
+          <div class="project-card">
+            <a
+              href="https://github.com/JesumboOludipe/PortfolioProjects/tree/main/Extracting%20Insights%20from%20Facebook%20and%20Instagram%20Adverts%20-%20SQL"
+              target="_blank"
+              class="project-image-wrap"
+            >
+              <img src="images/facebook.png" alt="Social Media Advertising" />
+              <div class="project-overlay"><span>View Project</span></div>
+            </a>
+            <div class="project-card-inner">
+              <div class="project-meta">
+                <span class="project-tech">Excel</span
+                ><span class="project-tech">SQL</span
+                ><span class="project-tech">Power BI</span>
+              </div>
+              <h3>
+                <a
+                  href="https://github.com/JesumboOludipe/PortfolioProjects/tree/main/Extracting%20Insights%20from%20Facebook%20and%20Instagram%20Adverts%20-%20SQL"
+                  target="_blank"
+                  >Social Media Advertising Insights</a
+                >
+              </h3>
+              <p>
+                Led a 5-person team analysing Facebook and Instagram KPIs — ad
+                spend, reach, engagement, and monthly growth rates.
+              </p>
               <a
-                href="https://learn.microsoft.com/api/credentials/share/en-us/JesumboOludipe-9899/EF77A1444DC48BCD?sharingId=C7777CDF805B83EF"
-                class="image"
-                ><img src="images/dp700.png" alt=""
-              /></a>
-            </article>
+                href="https://github.com/JesumboOludipe/PortfolioProjects/tree/main/Extracting%20Insights%20from%20Facebook%20and%20Instagram%20Adverts%20-%20SQL"
+                target="_blank"
+                class="project-link"
+                >View Project →</a
+              >
+            </div>
+          </div>
 
-            <!-- Mini Post -->
-            <article class="mini-post">
-              <header>
-                <h3>
-                  <a
-                    href="https://learn.microsoft.com/api/credentials/share/en-us/JesumboOludipe-1563/243DA87BBF0D7C68?sharingId=D43BB297FE7C2808"
-                    >Microsoft Certified: Power BI Data Analyst Associate (PL-300)</a
-                  >
-                </h3>
-                <time class="published" datetime="2015-10-20"></time>
-              </header>
-              <a
-                href="https://learn.microsoft.com/api/credentials/share/en-us/JesumboOludipe-1563/243DA87BBF0D7C68?sharingId=D43BB297FE7C2808"
-                class="image"
-                ><img src="images/pl300.jpg" alt=""
-              /></a>
-            </article>
-
-            <!-- Mini Post -->
-            <article class="mini-post">
-              <header>
-                <h3>
-                  <a
-                    href="https://learn.microsoft.com/api/credentials/share/en-us/JesumboOludipe-9899/EE6506DEE1162DA?sharingId=C7777CDF805B83EF"
-                    >Microsoft Certified: Azure Fundamentals (AZ-900)</a
-                  >
-                </h3>
-                <time class="published" datetime="2015-10-20"></time>
-              </header>
-              <a
-                href="https://learn.microsoft.com/api/credentials/share/en-us/JesumboOludipe-9899/EE6506DEE1162DA?sharingId=C7777CDF805B83EF"
-                class="image"
-                ><img src="images/az900.jpg" alt=""
-              /></a>
-            </article>
-
-            <!-- Mini Post -->
-            <article class="mini-post">
-              <header>
-                <h3>
-                  <a
-                  href="https://drive.google.com/file/d/1CPSHX1Ew8k9Z7q8FQNV5sLYucUzYeoQG/view?usp=sharing"
-                  >Azure Data Factory for Data Engineers</a
-                  >
-                </h3>
-                <time class="published" datetime="2015-10-20"></time>
-              </header>
-              <a                
-                href="https://drive.google.com/file/d/1CPSHX1Ew8k9Z7q8FQNV5sLYucUzYeoQG/view?usp=sharing"
-                class="image"
-                ><img src="images/adf.jpg" alt=""
-              /></a>
-            </article>
-
-            <!-- Mini Post -->
-            <article class="mini-post">
-              <header>
-                <h3>
-                  <a
-                  href="https://drive.google.com/file/d/1_K5pW3x2k2cDfV-rX4s0p_N8SrAOaTiO/view?usp=sharing"
-                  >Azure Databricks & Spark for Data Engineers</a
-                  >
-                </h3>
-                <time class="published" datetime="2015-10-20"></time>
-              </header>
-              <a
-                href="https://drive.google.com/file/d/1_K5pW3x2k2cDfV-rX4s0p_N8SrAOaTiO/view?usp=sharing"
-                class="image"
-                ><img src="images/databricks.jpg" alt=""
-              /></a>
-            </article>
-
-            <!-- Mini Post -->
-            <article class="mini-post">
-              <header>
-                <h3>
-                  <a
-                    href="https://www.credly.com/badges/2e1a4c1c-8504-4c5e-9cd6-7b67a08c6b0e/linked_in_profile"
-                    >Google Data Analytics Certficate</a
-                  >
-                </h3>
-                <time class="published" datetime="2015-10-20"></time>
-              </header>
-              <a
-                href="https://www.credly.com/badges/2e1a4c1c-8504-4c5e-9cd6-7b67a08c6b0e/linked_in_profile"
-                class="image"
-                ><img src="images/google.png" alt=""
-              /></a>
-            </article>
-
-            <h2>More Projects</h2>
-            <!-- Mini Post -->
-            <article class="mini-post">
-              <header>
-                <h3>
-                  <a
-                    href="https://app.powerbi.com/view?r=eyJrIjoiZWM0N2NlYjQtYWE3NC00NzBhLWJlMmItOWUxOTRiMDEzMzYzIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"
-                    >Unveiling Opportunities in the US Cab Industry through
-                    Data-Driven Insights</a
-                  >
-                </h3>
-                <time class="published" datetime="2015-10-20"></time>
-              </header>
+          <div class="project-card">
+            <a
+              href="https://app.powerbi.com/view?r=eyJrIjoiZWM0N2NlYjQtYWE3NC00NzBhLWJlMmItOWUxOTRiMDEzMzYzIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"
+              target="_blank"
+              class="project-image-wrap"
+            >
+              <img src="images/cab.png" alt="US Cab Industry" />
+              <div class="project-overlay"><span>View Project</span></div>
+            </a>
+            <div class="project-card-inner">
+              <div class="project-meta">
+                <span class="project-tech">Power BI</span>
+              </div>
+              <h3>
+                <a
+                  href="https://app.powerbi.com/view?r=eyJrIjoiZWM0N2NlYjQtYWE3NC00NzBhLWJlMmItOWUxOTRiMDEzMzYzIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"
+                  target="_blank"
+                  >US Cab Industry Analysis</a
+                >
+              </h3>
+              <p>
+                Data-driven Power BI dashboard unveiling strategic opportunities
+                and performance metrics across the US cab market.
+              </p>
               <a
                 href="https://app.powerbi.com/view?r=eyJrIjoiZWM0N2NlYjQtYWE3NC00NzBhLWJlMmItOWUxOTRiMDEzMzYzIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"
-                class="image"
-                ><img src="images/cab.png" alt=""
-              /></a>
-            </article>
+                target="_blank"
+                class="project-link"
+                >View Project →</a
+              >
+            </div>
+          </div>
 
-            <!-- Mini Post -->
-            <article class="mini-post">
-              <header>
-                <h3>
-                  <a
-                    href="https://github.com/JesumboOludipe/PortfolioProjects/blob/main/Data%20Correlation%20in%20Python%20-%20Movies%20Dataset.ipynb"
-                    >Movie Correlation With Python (pandas, numpy, seaborn,
-                    matplotlib)</a
-                  >
-                </h3>
-                <time class="published" datetime="2015-10-20"></time>
-              </header>
+          <div class="project-card">
+            <a
+              href="https://github.com/JesumboOludipe/PortfolioProjects/blob/main/Data%20Correlation%20in%20Python%20-%20Movies%20Dataset.ipynb"
+              target="_blank"
+              class="project-image-wrap"
+            >
+              <img src="images/moviespy.png" alt="Movie Correlation" />
+              <div class="project-overlay"><span>View on GitHub</span></div>
+            </a>
+            <div class="project-card-inner">
+              <div class="project-meta">
+                <span class="project-tech">Python</span>
+              </div>
+              <h3>
+                <a
+                  href="https://github.com/JesumboOludipe/PortfolioProjects/blob/main/Data%20Correlation%20in%20Python%20-%20Movies%20Dataset.ipynb"
+                  target="_blank"
+                  >Movie Correlation Analysis</a
+                >
+              </h3>
+              <p>
+                Exploratory correlation analysis on a movies dataset using
+                pandas, numpy, seaborn, and matplotlib.
+              </p>
               <a
                 href="https://github.com/JesumboOludipe/PortfolioProjects/blob/main/Data%20Correlation%20in%20Python%20-%20Movies%20Dataset.ipynb"
-                class="image"
-                ><img src="images/moviespy.png" alt=""
-              /></a>
-            </article>
-            <!-- Mini Post -->
-            <article class="mini-post">
-              <header>
-                <h3>
-                  <a
-                    href="https://app.powerbi.com/view?r=eyJrIjoiOTJlNmJlMDAtZWYyMi00NWQ4LTg2NzgtMTM3YjYyNWQyMTJiIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"
-                    >Unleashing Plato's Pizza Place's Potential with Power BI
-                    Analysis</a
-                  >
-                </h3>
-                <time class="published" datetime="2015-10-20"></time>
-              </header>
-              <a
-                href="https://app.powerbi.com/view?r=eyJrIjoiOTJlNmJlMDAtZWYyMi00NWQ4LTg2NzgtMTM3YjYyNWQyMTJiIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"
-                class="image"
-                ><img src="images/plato.png" alt=""
-              /></a>
-            </article>
-
-            <!-- Mini Post -->
-            <article class="mini-post">
-              <header>
-                <h3>
-                  <a
-                    href="https://public.tableau.com/views/CallCentreDashboard_17334223730500/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
-                    >Call Centre Dashboard in Tableau</a
-                  >
-                </h3>
-                <time class="published" datetime="2015-10-20"></time>
-              </header>
-              <a
-                href="https://public.tableau.com/views/CallCentreDashboard_17334223730500/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
-                class="image"
-                ><img src="images/callcentre.png" alt=""
-              /></a>
-            </article>
-
-            <!-- Mini Post -->
-            <article class="mini-post">
-              <header>
-                <h3>
-                  <a
-                    href="https://github.com/JesumboOludipe/PortfolioProjects/blob/main/Amazon%20Web%20Scrapping%20Project%20-%20Python.ipynb"
-                    >Amazon WebScraping with Python (BeautifulSoup, smtplib)</a
-                  >
-                </h3>
-                <time class="published" datetime="2015-10-20"></time>
-              </header>
-              <a
-                href="https://github.com/JesumboOludipe/PortfolioProjects/blob/main/Amazon%20Web%20Scrapping%20Project%20-%20Python.ipynb"
-                class="image"
-                ><img src="images/amazon.jpg" alt=""
-              /></a>
-            </article>
-            <!--
-            Mini Post 
-            <article class="mini-post">
-              <header>
-                <h3>
-                  <a
-                    href="https://github.com/JesumboOludipe/PortfolioProjects/blob/main/Data%20Cleaning%20in%20SQL%20-%20Nashville%20Housing%20Data.sql"
-                    >Data cleaning in SQL - Enhancing Nashville Housing Data</a
-                  >
-                </h3>
-                <time class="published" datetime="2015-10-20"></time>
-              </header>
-              <a
-                href="https://github.com/JesumboOludipe/PortfolioProjects/blob/main/Data%20Cleaning%20in%20SQL%20-%20Nashville%20Housing%20Data.sql"
-                class="image"
-                ><img src="images/housing.jpg" alt=""
-              /></a>
-            </article>
-
-             Mini Post 
-            <article class="mini-post">
-              <header>
-                <h3>
-                  <a
-                    href="https://public.tableau.com/app/profile/jesumbo.oludipe/viz/AirBnBProject_16751576079400/Dashboard1"
-                    >Exploring Seattle's AirBnB Landscape through Tableau
-                    Visualizations</a
-                  >
-                </h3>
-                <time class="published" datetime="2015-10-20"></time>
-              </header>
-              <a
-                href="https://public.tableau.com/app/profile/jesumbo.oludipe/viz/AirBnBProject_16751576079400/Dashboard1"
-                class="image"
-                ><img src="images/airbnb.png" alt=""
-              /></a>
-            </article>
-          
-             Mini Post 
-            <article class="mini-post">
-              <header>
-                <h3><a href="single.html">Rutrum neque accumsan</a></h3>
-                <time class="published" datetime="2015-10-19"
-                  >October 19, 2015</time
-                >
-                <a href="#" class="author"
-                  ><img src="images/avatar.jpg" alt=""
-                /></a>
-              </header>
-              <a href="single.html" class="image"
-                ><img src="images/pic05.jpg" alt=""
-              /></a>
-            </article>
-
-            -->
+                target="_blank"
+                class="project-link"
+                >View on GitHub →</a
+              >
+            </div>
           </div>
-        </section>
 
-        <!-- Posts List -->
-        <section>
-          <h2>Medium Posts</h2>
-          <ul class="posts">
-            <li>
-              <article>
-                <header>
-                  <h3>
-                    <a
-                      href="https://medium.com/@oludipejesumboj/understanding-the-basics-of-sentiment-analysis-9dc4a92f47a7"
-                      >Understanding the Basics of Sentiment Analysis</a
-                    >
-                  </h3>
-                  <time class="published" datetime="2015-10-20"
-                    >May 14, 2023</time
-                  >
-                </header>
-                <a href="single.html" class="image"
-                  ><img src="images/senti.png" alt=""
-                /></a>
-              </article>
-            </li>
-            <li>
-              <article>
-                <header>
-                  <h3>
-                    <a
-                      href="https://medium.com/@oludipejesumboj/data-driven-customer-behavior-analysis-and-cross-selling-opportunities-in-a-spanish-bank-278cf5499d48"
-                      >Data-Driven Customer Behavior Analysis and Cross-Selling
-                      Opportunities in Banking Industry</a
-                    >
-                  </h3>
-                  <time class="published" datetime="2015-10-15"
-                    >May 12, 2023</time
-                  >
-                </header>
-                <a href="single.html" class="image"
-                  ><img src="images/data.png" alt=""
-                /></a>
-              </article>
-              <!-- </li>
-            <li>
-              <article>
-                <header>
-                  <h3>
-                    <a href="single.html"
-                      >Euismod amet placerat vivamus porttitor</a
-                    >
-                  </h3>
-                  <time class="published" datetime="2015-10-10"
-                    >October 10, 2015</time
-                  >
-                </header>
-                <a href="single.html" class="image"
-                  ><img src="images/pic10.jpg" alt=""
-                /></a>
-              </article>
-            </li>
-            <li>
-              <article>
-                <header>
-                  <h3>
-                    <a href="single.html"
-                      >Magna enim accumsan tortor cursus ultricies</a
-                    >
-                  </h3>
-                  <time class="published" datetime="2015-10-08"
-                    >October 8, 2015</time
-                  >
-                </header>
-                <a href="single.html" class="image"
-                  ><img src="images/pic11.jpg" alt=""
-                /></a>
-              </article>
-            </li>
-            <li>
-              <article>
-                <header>
-                  <h3>
-                    <a href="single.html"
-                      >Congue ullam corper lorem ipsum dolor</a
-                    >
-                  </h3>
-                  <time class="published" datetime="2015-10-06"
-                    >October 7, 2015</time
-                  >
-                </header>
-                <a href="single.html" class="image"
-                  ><img src="images/pic12.jpg" alt=""
-                /></a>
-              </article>
-            </li>-->
-            </li>
-          </ul>
-        </section>
+          <div class="project-card">
+            <a
+              href="https://public.tableau.com/views/CallCentreDashboard_17334223730500/Dashboard1"
+              target="_blank"
+              class="project-image-wrap"
+            >
+              <img src="images/callcentre.png" alt="Call Centre Dashboard" />
+              <div class="project-overlay"><span>View on Tableau</span></div>
+            </a>
+            <div class="project-card-inner">
+              <div class="project-meta">
+                <span class="project-tech">Tableau</span>
+              </div>
+              <h3>
+                <a
+                  href="https://public.tableau.com/views/CallCentreDashboard_17334223730500/Dashboard1"
+                  target="_blank"
+                  >Call Centre Dashboard</a
+                >
+              </h3>
+              <p>
+                Interactive Tableau dashboard visualising call centre metrics —
+                resolution rates, agent performance, and satisfaction trends.
+              </p>
+              <a
+                href="https://public.tableau.com/views/CallCentreDashboard_17334223730500/Dashboard1"
+                target="_blank"
+                class="project-link"
+                >View on Tableau →</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- About -->
-        <section class="blurb">
-          <h2>About</h2>
-          <p>
-            Welcome to my portfolio! I'm a data professional who loves
-            exploring, analyzing, and visualizing data to tell compelling
-            stories. From finance to marketing, I've worked on diverse projects
-            showcasing my expertise in data-driven decision-making. Let's make
-            data work for us!
+    <!-- CERTIFICATIONS -->
+    <section id="certifications">
+      <div class="container">
+        <div class="section-label">04 — Certifications</div>
+        <h2 class="section-heading">Professional <em>credentials</em></h2>
+        <div class="certs-grid">
+          <a
+            href="https://learn.microsoft.com/api/credentials/share/en-us/JesumboOludipe-9899/EF77A1444DC48BCD?sharingId=C7777CDF805B83EF"
+            target="_blank"
+            class="cert-card"
+          >
+            <div class="cert-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.2"
+              >
+                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                <path d="M2 17l10 5 10-5" />
+                <path d="M2 12l10 5 10-5" />
+              </svg>
+            </div>
+            <div class="cert-body">
+              <span class="cert-issuer">Microsoft</span>
+              <h4>Microsoft Fabric Data Engineer</h4>
+              <span class="cert-code">DP-700</span>
+            </div>
+            <div class="cert-arrow">&#8594;</div>
+          </a>
+
+          <a
+            href="https://learn.microsoft.com/api/credentials/share/en-us/JesumboOludipe-1563/243DA87BBF0D7C68?sharingId=D43BB297FE7C2808"
+            target="_blank"
+            class="cert-card"
+          >
+            <div class="cert-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.2"
+              >
+                <rect x="3" y="3" width="7" height="7" />
+                <rect x="14" y="3" width="7" height="7" />
+                <rect x="3" y="14" width="7" height="7" />
+                <rect x="14" y="14" width="7" height="7" />
+              </svg>
+            </div>
+            <div class="cert-body">
+              <span class="cert-issuer">Microsoft</span>
+              <h4>Power BI Data Analyst Associate</h4>
+              <span class="cert-code">PL-300</span>
+            </div>
+            <div class="cert-arrow">&#8594;</div>
+          </a>
+
+          <a
+            href="https://learn.microsoft.com/api/credentials/share/en-us/JesumboOludipe-9899/EE6506DEE1162DA?sharingId=C7777CDF805B83EF"
+            target="_blank"
+            class="cert-card"
+          >
+            <div class="cert-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.2"
+              >
+                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
+            </div>
+            <div class="cert-body">
+              <span class="cert-issuer">Microsoft</span>
+              <h4>Azure Fundamentals</h4>
+              <span class="cert-code">AZ-900</span>
+            </div>
+            <div class="cert-arrow">&#8594;</div>
+          </a>
+
+          <a
+            href="https://drive.google.com/file/d/1CPSHX1Ew8k9Z7q8FQNV5sLYucUzYeoQG/view?usp=sharing"
+            target="_blank"
+            class="cert-card"
+          >
+            <div class="cert-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.2"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" />
+              </svg>
+            </div>
+            <div class="cert-body">
+              <span class="cert-issuer">Udemy</span>
+              <h4>Azure Data Factory for Data Engineers</h4>
+              <span class="cert-code">ADF</span>
+            </div>
+            <div class="cert-arrow">&#8594;</div>
+          </a>
+
+          <a
+            href="https://drive.google.com/file/d/1_K5pW3x2k2cDfV-rX4s0p_N8SrAOaTiO/view?usp=sharing"
+            target="_blank"
+            class="cert-card"
+          >
+            <div class="cert-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.2"
+              >
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+              </svg>
+            </div>
+            <div class="cert-body">
+              <span class="cert-issuer">Udemy</span>
+              <h4>Azure Databricks and Spark for Data Engineers</h4>
+              <span class="cert-code">Databricks</span>
+            </div>
+            <div class="cert-arrow">&#8594;</div>
+          </a>
+
+          <a
+            href="https://www.credly.com/badges/2e1a4c1c-8504-4c5e-9cd6-7b67a08c6b0e/linked_in_profile"
+            target="_blank"
+            class="cert-card"
+          >
+            <div class="cert-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.2"
+              >
+                <path
+                  d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"
+                />
+              </svg>
+            </div>
+            <div class="cert-body">
+              <span class="cert-issuer">Google</span>
+              <h4>Google Data Analytics Certificate</h4>
+              <span class="cert-code">Coursera</span>
+            </div>
+            <div class="cert-arrow">&#8594;</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog">
+      <div class="container">
+        <div class="section-label">05 — Writing</div>
+        <h2 class="section-heading">On <em>Medium</em></h2>
+        <div class="blog-grid">
+          <a
+            href="https://medium.com/@oludipejesumboj/understanding-the-basics-of-sentiment-analysis-9dc4a92f47a7"
+            target="_blank"
+            class="blog-card"
+          >
+            <div class="blog-date">May 14, 2023</div>
+            <h3>Understanding the Basics of Sentiment Analysis</h3>
+            <p>
+              An introduction to sentiment analysis — how machines learn to
+              understand human emotion and opinion from text data.
+            </p>
+            <span class="blog-read">Read on Medium &#8594;</span>
+          </a>
+
+          <a
+            href="https://medium.com/@oludipejesumboj/data-driven-customer-behavior-analysis-and-cross-selling-opportunities-in-a-spanish-bank-278cf5499d48"
+            target="_blank"
+            class="blog-card"
+          >
+            <div class="blog-date">May 12, 2023</div>
+            <h3>
+              Data-Driven Customer Behaviour Analysis and Cross-Selling in
+              Banking
+            </h3>
+            <p>
+              A deep dive into using data to understand banking customers and
+              unlock cross-selling strategies that drive revenue growth.
+            </p>
+            <span class="blog-read">Read on Medium &#8594;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-inner">
+          <div class="section-label">06 — Contact</div>
+          <h2 class="section-heading">Let's <em>connect</em></h2>
+          <p class="contact-desc">
+            Whether you have a data challenge to solve, a role to discuss, or
+            just want to connect — I'd love to hear from you.
           </p>
-          <!--<ul class="actions">
-            <li><a href="#" class="button">Learn More</a></li>
-          </ul>-->
-        </section>
+          <div class="contact-links">
+            <a href="mailto:oludipejesumboj&#64;gmail.com" class="contact-link">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              oludipejesumboj&#64;gmail.com
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jesumbooludipe/"
+              target="_blank"
+              class="contact-link"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+              linkedin.com/in/jesumbooludipe
+            </a>
+          </div>
+          <div class="contact-cta">
+            <a
+              href="https://drive.google.com/file/d/1SKc5Ug2jjlOU-byNBj5oX75r_f5Buh6m/view?usp=drivesdk"
+              target="_blank"
+              class="btn-primary"
+              >Download My CV</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Footer -->
-        <section id="footer">
-          <ul class="icons">
-            <li>
-              <a
-                href="https://www.linkedin.com/in/jesumbooludipe/"
-                class="icon brands fa-linkedin"
-                ><span class="label">LinkedIn</span></a
-              >
-            </li>
-            <li>
-              <a
-                href="mailto: oludipejesumboj@gmail.com"
-                class="icon solid fa-envelope"
-                ><span class="label">Email</span></a
-              >
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/jesumbo_oludipe"
-                class="icon brands fa-twitter"
-                ><span class="label">Twitter</span></a
-              >
-            </li>
-            <li>
-              <a
-                href="https://github.com/JesumboOludipe"
-                class="icon brands fa-github"
-                ><span class="label">GitHub</span></a
-              >
-            </li>
-            <!--
-            <li>
-              <a href="#" class="icon solid fa-rss"
-                ><span class="label">RSS</span></a
-              >
-            </li>-->
-          </ul>
-          <p class="copyright">
-            &copy; Jesumbo Oludipe. Design:
-            <a href="http://html5up.net">HTML5 UP</a>.
-          </p>
-        </section>
-      </section>
-    </div>
+    <!-- FOOTER -->
+    <footer>
+      <div class="container footer-inner">
+        <span class="footer-name">Jesumbo Joseph Oludipe</span>
+        <span class="footer-copy">&#169; 2025 — All rights reserved</span>
+      </div>
+    </footer>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

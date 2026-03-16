@@ -30,6 +30,8 @@ Analysed over 13 million customer records from a Spanish bank to uncover behavio
 
 **Key findings:** The majority of customers owned 0–2 products, presenting significant cross-selling potential. Current accounts and debit cards were most commonly held, while savings accounts and guarantees were least adopted — surfacing clear upsell targets. Delivered 10 prioritised cross-selling recommendations alongside a strategy covering targeted campaigns, product bundling, and customer experience improvements.
 
+![Dashboard](https://github.com/JesumboOludipe/PortfolioProjects/blob/main/Cross%20Selling%20Recommendations%20for%20Banking%20Products/cross%20sell.png)
+
 ---
 
 ### Sylip Corporation Sales Analysis — Excel, SQL & Power BI
@@ -39,6 +41,8 @@ Analysed over 13 million customer records from a Spanish bank to uncover behavio
 Delivered a full sales performance analysis for a multi-category retail company, focusing on KPIs including region-wise profit, annual revenue, and units sold. Used SQL Server for data cleaning and transformation, and Power BI for interactive reporting.
 
 **Key findings:** Identified underperforming regions and seasonal revenue patterns, providing actionable recommendations to improve profitability and inform inventory planning.
+
+![Dashboard](https://github.com/JesumboOludipe/PortfolioProjects/blob/main/Sylip%20Corporation%20Sales%20Analysis%20-%20SQL%20and%20Power%20BI/sylip.png)
 
 ---
 

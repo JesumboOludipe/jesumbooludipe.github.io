@@ -14,8 +14,8 @@ I specialise in building scalable ETL pipelines, designing executive-ready dashb
 
 **Connect:**
 
-- LinkedIn: [jesumbooludipe](https://www.linkedin.com/in/jesumbooludipe/)
-- CV: [Download PDF](https://drive.google.com/file/d/1SKc5Ug2jjlOU-byNBj5oX75r_f5Buh6m/view?usp=share_link)
+- LinkedIn: [Jesumbo Oludipe](https://www.linkedin.com/in/jesumbooludipe/)
+- CV: [View PDF](https://drive.google.com/file/d/1SKc5Ug2jjlOU-byNBj5oX75r_f5Buh6m/view?usp=share_link)
 - Portfolio: [jesumbooludipe.github.io](https://jesumbooludipe.github.io/)
 
 ---

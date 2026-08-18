@@ -363,6 +363,50 @@ section { padding: var(--section-gap) 0; }
 }
 .section-heading em { font-style: italic; color: var(--blue-soft); }
 
+/* ---- IMPACT / STATS BAND ---- */
+#impact {
+  background: var(--warm-white);
+  padding: 0;
+  position: relative;
+  z-index: 5;
+}
+.stats-band {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 12px 40px rgba(27, 42, 74, 0.08);
+  margin-top: -56px;
+  overflow: hidden;
+}
+.stat {
+  padding: 36px 32px;
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.stat:last-child { border-right: none; }
+.stat-number {
+  font-family: var(--font-display);
+  font-size: 2.9rem;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--blue-mid);
+  letter-spacing: -0.01em;
+}
+.stat-number em {
+  font-style: normal;
+  color: var(--blue-soft);
+}
+.stat-label {
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
 /* ---- ABOUT ---- */
 #about { background: var(--warm-white); }
 .about-grid {
@@ -667,7 +711,31 @@ footer { background: var(--blue-deep); border-top: 1px solid rgba(255,255,255,0.
   .mobile-menu { padding: 16px 24px 24px; }
 }
 
+@media (max-width: 1024px) {
+  .stats-band { grid-template-columns: repeat(2, 1fr); }
+  .stat:nth-child(2) { border-right: none; }
+  .stat:nth-child(1), .stat:nth-child(2) { border-bottom: 1px solid var(--border); }
+}
+
 @media (max-width: 480px) {
   .hero-actions { flex-direction: column; }
   .btn-primary, .btn-secondary { text-align: center; }
+  .stats-band { grid-template-columns: 1fr; margin-top: -40px; }
+  .stat { border-right: none; border-bottom: 1px solid var(--border); padding: 26px 28px; }
+  .stat:last-child { border-bottom: none; }
+  .stat-number { font-size: 2.4rem; }
+}
+
+/* ---- REDUCED MOTION (accessibility) ---- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  .reveal, [class*="fade"] { opacity: 1 !important; transform: none !important; }
+  .hero-eyebrow, .hero-name, .hero-desc, .hero-actions,
+  .hero-socials, .hero-image-wrap, .hero-scroll { opacity: 1 !important; }
+  .scroll-line { animation: none !important; }
 }
